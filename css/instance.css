@@ -1,0 +1,48 @@
+* {
+  padding:none;
+  border:none;
+  box-sizing:border-box;
+}
+
+body {
+  background: url(/images/Screenshot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+#budget {
+  text-align: center;
+}
+
+.expense, .salaryRem {
+  width: 40%;
+  background-color: rgba(165, 42, 42, 0.514);
+  color:aqua;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30%;
+}
+
+/* .expense {
+  background: url("/images/april.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.salaryRem{
+  background: url("/images/may.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
