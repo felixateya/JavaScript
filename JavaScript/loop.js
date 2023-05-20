@@ -10,9 +10,9 @@ Assign the value 0 to i;
 increment i by one each time
 */
 
-for (i = 0; i <= 10; i++) {
-  console.log(i);
-}
+// for (i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
 
 /* 
 display the week
@@ -52,15 +52,15 @@ OUTPUT IN THE BELOW FORMAT
     1 X 2 = 2 ............
 */
 
-for (var m = 1; m <= 19; m++) {
-  console.log(" ")
-  var z = "MULTIPLICATION TABLE FOR " + m;
-  console.log(z);
-  for (var n = 1; n <= 19; n++) {
-    var v = m + " x " + n + " = "+ m * n;
-    console.log(v);
-  }
-}
+// for (var m = 1; m <= 19; m++) {
+//   console.log(" ")
+//   var z = "MULTIPLICATION TABLE FOR " + m;
+//   console.log(z);
+//   for (var n = 1; n <= 19; n++) {
+//     var v = m + " x " + n + " = "+ m * n;
+//     console.log(v);
+//   }
+// }
 
 
 
