@@ -1,7 +1,7 @@
-* {
+/* * {
   padding:0;
   margin:0;
-  /* box-sizing:border-box; */
+  box-sizing:border-box;
 }
 
 .body {
@@ -40,6 +40,7 @@ input {
   width: 40%;
   background-color: rgba(165, 42, 42, 0.514);
   color:aqua;
+  line-height: 1.5;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -50,7 +51,7 @@ input {
   border-radius: 30%;
 }
 
-/* .expense {
+.expense {
   background: url("/images/april.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,3 +62,46 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
 } */
+
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+  background-size: cover;
+  backdrop-filter:  brightness(50%);
+}
+
+canvas {
+  display: block;
+}
+
+#canvas_container {
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.9em;
+  background: #000000;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #000000;
+}
