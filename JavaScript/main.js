@@ -2,6 +2,7 @@
 document.getElementById("h1").innerText = "Welcome to JavaScript";
 document.getElementById("paragraph").innerText = "This is gonna be so much fun";
 document.getElementById("image").src = "/images/Screenshot.png";
+document.createElement("p");
 
 //image styling
 document.getElementById("image").style.width = "70%";
@@ -15,7 +16,6 @@ document.getElementById("h1").style.fontSize = "36px";
 
 document.getElementById("paragraph").style.color = "blue";
 document.getElementById("paragraph").style.fontSize = "30px";
-document.getElementY
 
 // Using variables
 var firstName = "Felix";

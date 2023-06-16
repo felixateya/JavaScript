@@ -5,8 +5,10 @@ body
   background-image:url("/images/lamborghini-urus-wallpaper-preview.jpg");
   object-fit:fill;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:40%;
+  background-size: cover;
   height: 100vh;
+
   
 }
 

@@ -5,7 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>conditionalStatements</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <style>
+      #date-display{
+        margin-left: 30%;
+        animation: slide 15s infinite;
+      }
+
+      @keyframes slide {
+        25%{
+          
+          background-color: black;
+          color: white;
+          border: 7px solid white;
+        }
+        50%{
+          
+          background-color: green;
+          color: black;
+          border: 7px solid black;
+        }
+        75%{
+          background-color: khaki;
+          color: black;
+          border: 7px solid grey;
+        }
+        100%{
+          
+          color: wheat;
+          background-color:darkred;
+          border: 7px solid wheat;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="age">
@@ -17,27 +49,28 @@
 
     <!-- dates -->
 
-    <!-- <p id="dateOf"></p>
-<p id="msec"></p>
-<p id="milli"></p>
-<p id="year"></p>
-<p id="month"></p>
-<p id="monthName"></p>
-<p id="date"></p>
-<p id="hours"></p>
-<p id="mins"></p>
-<p id="day"></p>
-<p id="fullDate"></p> -->
+    <p id="dateOf"></p>
+    <p id="msec"></p>
+    <p id="milli"></p>
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="monthName"></p>
+    <p id="date"></p>
+    <p id="hours"></p>
+    <p id="mins"></p>
+    <p id="day"></p>
+    <p id="fullDate"></p>
+    <p id="date-display" style="font-size: 40px; font-weight:600; color: #fff; border:7px solid black; width:160px;padding:10px; background-color:black; border-radius:50%;height:160px;display:flex;justify-content:center;align-items:center"></p>
 
     <!-- TASK 4 -->
 
-    <!-- <div class="age">
+    <div class="age">
       <input type="text" id="purchase" placeholder="purchase" />
       <input type="text" id="promocode" placeholder="promocode" />
 
       <button id="generate">Generate</button>
       <p id="amountPaid"></p>
-    </div> -->
+    </div>
 
     <script src="/JavaScript/conditionalStatement.js"></script>
   </body>

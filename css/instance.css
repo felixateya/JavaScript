@@ -1,4 +1,4 @@
-/* * {
+* {
   padding:0;
   margin:0;
   box-sizing:border-box;
@@ -51,7 +51,7 @@ input {
   border-radius: 30%;
 }
 
-.expense {
+/* .expense {
   background: url("/images/april.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ input {
 
 
 
-body {
+/* body {
   margin: 0;
   overflow: hidden;
   width: 100vw;
@@ -104,4 +104,4 @@ button {
 button:hover {
   background: #ffffff;
   color: #000000;
-}
+} */
