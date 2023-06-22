@@ -6,19 +6,19 @@
 -GREEN
 */
 
-// let stop = "red";
-// let wait = "amber";
-// let go = "green";
+let stop = "red";
+let wait = "amber";
+let go = "green";
 
-// if (stop == "blue") {
-//   console.log("STOP");
-// } else if (wait == "yellow") {
-//   console.log("WAIT");
-// } else if (go == "red") {
-//   console.log("GO");
-// } else {
-//   console.log("ERROR");
-// }
+if (stop == "blue") {
+  console.log("STOP");
+} else if (wait == "yellow") {
+  console.log("WAIT");
+} else if (go == "red") {
+  console.log("GO");
+} else {
+  console.log("ERROR");
+}
 
 /*TASK 2: CHECK AGE - DETERMINE INCOME
 0 - 17 ==> allowance
@@ -72,7 +72,7 @@ const months = [
   "November",
   "December",
 ];
-let month = months[9];
+let month = months[5];
 document.getElementById("monthName").innerText = month;
 document.getElementById("date").innerText = D.getDate();
 document.getElementById("hours").innerText = D.getHours();
@@ -136,6 +136,7 @@ updateDateDisplay();
 // Update the date display every second
 setInterval(updateDateDisplay, 1000);
 
+// END OF DATES
 
 // let dateDisplay = document.getElementById("date-display")
 
@@ -153,7 +154,7 @@ setInterval(updateDateDisplay, 1000);
 // updateTimeDisplay()
 
 // setInterval(updateTimeDisplay, 1000)
-// TASK 4:
+// TASK 3:
 /*
 promocode = KARIBU then discount = 25%
 only applicable if purchase is above 20,000

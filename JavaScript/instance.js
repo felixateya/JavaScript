@@ -70,8 +70,12 @@ console.log("The area of the circle is", area);
 document.getElementById("budget").innerText = "SALARY TRACKER";
 
 document.getElementById("expenses").innerText = "ALL EXPENSES";
+// document.getElementById("expenses").style.color = "brown"
+document.getElementById("expenses").style.textDecoration = "underline"
 
 document.getElementById("salaryRemaining").innerText = "SALARY";
+// document.getElementById("salaryRemaining").style.color = "brown"
+document.getElementById("salaryRemaining").style.textDecoration = "underline"
 
 document.getElementById("submit").onclick = function () {
   var salary = document.getElementById("salary").value;
@@ -79,138 +83,153 @@ document.getElementById("submit").onclick = function () {
   salary = document.getElementById("salary").value;
   console.log(salary)
   document.getElementById("before").innerText =
-    "SALARY BEFORE DEDUCTIONS:" + " " + "KES" + " " + salary;
+    "Salary Before Deductions:" + " " + "Kshs" + " " + salary;
   console.log("salaryRemaining;", ":", salary);
 
   let expense = document.getElementById("rentInput").value;
   document.getElementById("rent").innerText =
-    "RENT:" + " " + "KES" + " " + expense;
+    "Rent:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterRent").innerText =
-    "AFTER PAYING RENT:" + " " + "KES" + " " + salary;
+    "After Paying Rent:" + " " + "Kshs" + " " + salary;
 
   console.log("afterRent;", expense, ":", salary);
 
   expense = document.getElementById("electricInput").value;
   document.getElementById("electric").innerText =
-    "ELECTRICITY BILL:" + " " + "KES" + " " + expense;
+    "Electricity Bill:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterElectric").innerText =
-    "AFTER PAYING ELECTRICITY BILL:" + " " + "KES" + " " + salary;
+    "After Paying for Electricity:" + " " + "Kshs" + " " + salary;
 
   console.log("afterElectric;", expense, ":", salary);
 
   expense = document.getElementById("foodInput").value;
   document.getElementById("food").innerText =
-    "FOOD EXPENSES:" + " " + "KES" + " " + expense;
+    "Food Expenses:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterFood").innerText =
-    "AFTER FOOD EXPENSES:" + " " + "KES" + " " + salary;
+    "After Food Expenses:" + " " + "Kshs" + " " + salary;
   console.log("afterFood;", expense, ":", salary);
 
   expense = document.getElementById("waterInput").value;
   document.getElementById("water").innerText =
-    "WATER BILL:" + " " + "KES" + " " + expense;
+    "Water Bill:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterWater").innerText =
-    "AFTER PAYING THE WATER BILL:" + " " + "KES" + " " + salary;
+    "After Paying the Water Bill:" + " " + "Kshs" + " " + salary;
   console.log("afterWater;", expense, ":", salary);
 
   expense = document.getElementById("wifiInput").value;
   document.getElementById("wifi").innerText =
-    "WIFI PAYMENT:" + " " + "KES" + " " + expense;
+    "Wifi Payment:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterWifi").innerText =
-    "AFTER PAYING FOR WIFI:" + " " + "KES" + " " + salary;
+    "After Paying for Wifi:" + " " + "Kshs" + " " + salary;
   console.log("afterWifi;", expense, ":", salary);
 
   expense = document.getElementById("debtInput").value;
   document.getElementById("debt").innerText =
-    "DEBT PAYMENT:" + " " + "KES" + " " + expense;
+    "Debt Payment:" + " " + "Kshs" + " " + expense;
   console.log("afterDebt;", expense, ":", salary);
   salary = salary - expense;
   document.getElementById("afterDebt").innerText =
-    "AFTER DEBT PAYMENT:" + " " + "KES" + " " + salary;
+    "After Debt Payment:" + " " + "Kshs" + " " + salary;
   console.log("afterDebt;", expense, ":", salary);
+
+  expense = document.getElementById("titheInput").value;
+  document.getElementById("tithe").innerText =
+    "Tithe Payment:" + " " + "KES" + " " + expense;
+  console.log("afterTithe;", expense, ":", salary);
+  salary = salary - expense;
+  document.getElementById("afterTithe").innerText =
+  "After Tithe Payment:" + " " + "KES" + " " + salary;
 
   expense = document.getElementById("insuranceInput").value;
   document.getElementById("insurance").innerText =
-    "INSURANCE PAYMENT:" + " " + "KES" + " " + expense;
+    "Insurance Payment:" + " " + "Kshs" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterInsurance").innerText =
-    "AFTER PAYING INSURANCE:" + " " + "KES" + " " + salary;
+    "After Paying Insurance:" + " " + "Kshs" + " " + salary;
   console.log("afterInsurance;", expense, ":", salary);
 
-  expense = document.getElementById("savingsInput").value;
+  // expense = document.getElementById("savingsInput").value;
   document.getElementById("savings").innerText =
-    "SAVINGS:" + " " + "KES" + " " + expense;
-  salary = salary - expense;
+    "Savings:" + " " + "Kshs" + " " + salary;
+  // salary = salary - expense;
   document.getElementById("afterSavings").innerText =
-    "AFTER SAVINGS:" + " " + "KES" + " " + salary;
+    "After Savings:" + " " + "Kshs" + " " + salary;
   console.log("afterSavings;", expense, ":", salary);
 };
 
 salary = document.getElementById("salary").value;
 document.getElementById("before").innerText =
-  "SALARY BEFORE DEDUCTIONS:" + " " + "KES" + " " + salary;
+  "Salary Before Deductions:" + " " + "KES" + " " + salary;
 
   expense = document.getElementById("rentInput").value;
   document.getElementById("rent").innerText =
-  "RENT:" + " " + "KES" + " " + expense;
+  "Rent:" + " " + "KES" + " " + expense;
     
   salary = salary - expense;
   document.getElementById("afterRent").innerText =
-    "AFTER PAYING RENT:" + " " + "KES" + " " + salary;
+    "After Paying Rent:" + " " + "KES" + " " + salary;
 
     expense = document.getElementById("electricInput").value;
     document.getElementById("electric").innerText =
-      "ELECTRICITY BILL:" + " " + "KES" + " " + expense;
+      "Electricity Bill:" + " " + "KES" + " " + expense;
     salary = salary - expense;
     document.getElementById("afterElectric").innerText =
-  "AFTER PAYING ELECTRICITY BILL:" + " " + "KES" + " " + salary;
+  "After Paying Electricity Bill:" + " " + "KES" + " " + salary;
       
   expense = document.getElementById("foodInput").value;
   document.getElementById("food").innerText =
-    "FOOD EXPENSES:" + " " + "KES" + " " + expense;
+    "Food Expenses:" + " " + "KES" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterFood").innerText =
-  "AFTER FOOD EXPENSES:" + " " + "KES" + " " + salary;
+  "After Food Expenses:" + " " + "KES" + " " + salary;
     
   expense = document.getElementById("waterInput").value;
   document.getElementById("water").innerText =
-    "WATER BILL:" + " " + "KES" + " " + expense;
+    "Water Bill:" + " " + "KES" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterWater").innerText =
-  "AFTER PAYING THE WATER BILL:" + " " + "KES" + " " + salary;
+  "After Paying the Water Bill:" + " " + "KES" + " " + salary;
     
   expense = document.getElementById("wifiInput").value;
   document.getElementById("wifi").innerText =
-    "WIFI PAYMENT:" + " " + "KES" + " " + expense;
+    "WIFI Payment:" + " " + "KES" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterWifi").innerText =
-  "AFTER PAYING FOR WIFI:" + " " + "KES" + " " + salary;
+  "After Paying for WIFI:" + " " + "KES" + " " + salary;
     
   expense = document.getElementById("debtInput").value;
   document.getElementById("debt").innerText =
-    "DEBT PAYMENT:" + " " + "KES" + " " + expense;
+    "Debt Payment:" + " " + "KES" + " " + expense;
   console.log("afterDebt;", expense, ":", salary);
   salary = salary - expense;
   document.getElementById("afterDebt").innerText =
-  "AFTER DEBT PAYMENT:" + " " + "KES" + " " + salary;
+  "After Debt Payment:" + " " + "KES" + " " + salary;
+  expense = document.getElementById("titheInput").value;
+  document.getElementById("tithe").innerText =
+    "Tithe Payment:" + " " + "KES" + " " + expense;
+  console.log("afterTithe;", expense, ":", salary);
+  salary = salary - expense;
+  document.getElementById("afterTithe").innerText =
+  "After Tithe Payment:" + " " + "KES" + " " + salary;
     
   expense = document.getElementById("insuranceInput").value;
   document.getElementById("insurance").innerText =
-    "INSURANCE PAYMENT:" + " " + "KES" + " " + expense;
+    "Insurance Payment:" + " " + "KES" + " " + expense;
   salary = salary - expense;
   document.getElementById("afterInsurance").innerText =
-  "AFTER PAYING INSURANCE:" + " " + "KES" + " " + salary;
+  "After Paying for Insurance:" + " " + "KES" + " " + salary;
     
-  expense = document.getElementById("savingsInput").value;
+  // expense = document.getElementById("savingsInput").value;
   document.getElementById("savings").innerText =
-    "SAVINGS:" + " " + "KES" + " " + expense;
-  salary = salary - expense;
+    "Savings:" + " " + "KES" + " " + salary;
+  // salary = salary - expense
   document.getElementById("afterSavings").innerText =
-    "AFTER SAVINGS:" + " " + "KES" + " " + salary;
+    "AFter Savings:" + " " + "KES" + " " + salary;
 
 
 
