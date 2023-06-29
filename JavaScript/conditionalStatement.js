@@ -8,6 +8,7 @@
 
 let stop = "red";
 let wait = "amber";
+console.log("🚀 ~ file: conditionalStatement.js:11 ~ wait:", wait)
 let go = "green";
 
 if (stop == "blue") {
@@ -29,7 +30,9 @@ Above 65 ==> pension
 
 document.getElementById("submit").onclick = function clicker() {
   age = document.getElementById("age").value;
+  // console.log("🚀 ~ file: conditionalStatement.js:32 ~ clicker ~ age:", age)
   income = document.getElementById("salary").value;
+  // console.log("🚀 ~ file: conditionalStatement.js:33 ~ clicker ~ income:", income)
 
   if (age > 0 && age <= 17) {
     document.getElementById("display").innerText =
@@ -116,6 +119,7 @@ var dateDisplay = document.getElementById("date-display");
 function updateDateDisplay() {
   var currentDate = new Date();
   var seconds = currentDate.getSeconds();
+  var milliseconds = currentDate.getMilliseconds()
   var minutes = currentDate.getMinutes();
   var hours = currentDate.getHours();
   var day = currentDate.getDate();
@@ -124,7 +128,7 @@ function updateDateDisplay() {
 
   // Format the date and time
   var formattedDate = year + "-" + month + "-" + day;
-  var formattedTime = hours + ":" + minutes + ":" + seconds;
+  var formattedTime = hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
 
   // Update the display
   dateDisplay.innerText = formattedTime;
@@ -134,7 +138,7 @@ function updateDateDisplay() {
 updateDateDisplay();
 
 // Update the date display every second
-setInterval(updateDateDisplay, 1000);
+setInterval(updateDateDisplay, 80);
 
 // END OF DATES
 
@@ -165,41 +169,51 @@ promocode = Nairobi then discount = 15%
 applicable if purchase is above 10,000
 */
 
-// document.getElementById("generate").onclick = function () {
-//   var purchase = parseFloat(document.getElementById("purchase").value);
-//   var promocode = document.getElementById("promocode").value;
-//   var discount = 0;
+document.getElementById("generate").onclick = function () {
+  var purchase = document.getElementById("purchase").value;
+  console.log(purchase)
+  var promocode = document.getElementById("promocode").value;
+  var discount = 0;
+  console.log(discount)
 
-//   if (promocode == "KARIBU" && purchase >= 20000) {
-//     discount = 0.25;
-//     if (promocode == "KARIBU" && purchase >= 50000) {
-//       discount += 0.02;
-//     } else if (promocode == "KARIBU" && purchase >= 100000) {
-//       discount += 0.05;
-//     }
-//   } else if (promocode == "NAIROBI" && purchase >= 10000) {
-//     discount = 0.15;
-//     if (promocode == "NAIROBI" && purchase >= 50000) {
-//       discount += 0.02;
-//     } else if (promocode == "NAIROBI" && purchase >= 100000) {
-//       discount += 0.05;
-//     }
-//     var amountPaid = purchase * (1 - discount);
-//     document.getElementById("amountPaid").innerText =
-//       "amount after discount:" + " " + amountPaid;
-//   } else if (purchase < 20000 && promocode == "KARIBU") {
-//     document.getElementById("amountPaid").innerText =
-//       "amount to be paid:" + " " + purchase;
-//   } else if (purchase < 10000 && promocode == "NAIROBI") {
-//     document.getElementById("amountPaid").innerText =
-//       "amount to be paid:" + " " + purchase;
-//   } else if (!promocode) {
-//     document.getElementById("amountPaid").innerText =
-//       "amount to be paid:" + " " + purchase;
-//   } else {
-//     // invalid promo code entered, display error message and original purchase amount
-//     document.getElementById("amountPaid").innerText = "Invalid promo code!!!!!";
-//   }
-// };
+  if (promocode == "KARIBU" && purchase >= 20000) {
+    discount = 0.25;
+    if (promocode == "KARIBU" && purchase >= 50000 && purchase<100000) {
+      discount += 0.02;
+    } else if (promocode == "KARIBU" && purchase >= 100000) {
+      discount += 0.05;
+    }
+
+    var amountPaid = purchase * (1 - discount);
+    console.log(amountPaid)
+    
+    document.getElementById("amountPaid").innerText =
+      "amount after discount:" + " " + amountPaid;
+  } else if (promocode == "NAIROBI" && purchase >= 10000) {
+    discount = 0.15;
+    if (promocode == "NAIROBI" && purchase >= 50000 && purchase<100000) {
+      discount += 0.02;
+    } else if (promocode == "NAIROBI" && purchase >= 100000) {
+      discount += 0.05;
+    }
+    var amountPaid = purchase * (1 - discount);
+    console.log(amountPaid)
+    
+    document.getElementById("amountPaid").innerText =
+      "amount after discount:" + " " + amountPaid;
+  } else if (purchase < 20000 && promocode == "KARIBU") {
+    document.getElementById("amountPaid").innerText =
+      "amount to be paid:" + " " + purchase;
+  } else if (purchase < 10000 && promocode == "NAIROBI") {
+    document.getElementById("amountPaid").innerText =
+      "amount to be paid:" + " " + purchase;
+  } else if (!promocode) {
+    document.getElementById("amountPaid").innerText =
+      "amount to be paid:" + " " + purchase;
+  } else {
+    // invalid promo code entered, display error message and original purchase amount
+    document.getElementById("amountPaid").innerText = "Invalid promo code!!!!!";
+  }
+};
 
 
