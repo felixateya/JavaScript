@@ -155,3 +155,11 @@ console.log(e > d && e > 10)
 // symbol
 // object
 // string
+
+
+document.getElementById("h1").innerText = "Hello World";
+document.getElementById("paragraph").innerText = "Javascript 101";
+document.getElementById("firstName").innerText = "Caleb";
+document.getElementById("secondName").innerText = "Type your second name here";
+document.getElementById("lastName").innerText = "type tour last name here";
+document.getElementById("fullName").innerText = "type your full name here";
